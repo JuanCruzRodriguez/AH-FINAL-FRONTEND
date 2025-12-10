@@ -1,0 +1,129 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  width: 100%;
+  background-color: #0cc0df;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+/* Contenedor de botones */
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Botones del nav */
+.nav-btn {
+  font-size: 0.95rem;
+  background-color: white;
+  color: #0cc0df;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.nav-btn:hover {
+  background-color: #e6faff;
+  transform: translateY(-2px);
+}
+
+/* Botón destacado (ej: iniciar sesión / logout) */
+.nav-btn.primary {
+  background-color: #006b7a;
+  color: white;
+}
+
+.nav-btn.primary:hover {
+  background-color: #005261;
+}
+
+/* ===== CONTENEDORES GENERALES ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== FORMULARIOS ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input, select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0cc0df;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  transition: 0.25s;
+}
+
+button:hover {
+  background-color: #0a9cb8;
+}
+
+/* ===== TABLAS ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #0cc0df;
+  color: white;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #f0fbff;
+}
