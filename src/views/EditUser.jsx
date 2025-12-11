@@ -42,7 +42,7 @@ const EditUser = () => {
     return null;
   };
 
-  const endPoint = `http://127.0.0.1:3000/api/users/${id}`;
+  const endPoint = `https://ah-final-backend.onrender.com/api/users/${id}`;
 
   useEffect(() => {
     const getUser = async () => {

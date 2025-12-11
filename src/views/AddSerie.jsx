@@ -36,7 +36,7 @@ const AddSerie = () => {
 
     setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:3000/api/series", {
+      const res = await fetch("https://ah-final-backend.onrender.com/api/series", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

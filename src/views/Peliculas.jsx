@@ -12,7 +12,7 @@ const Peliculas = () => {
 
   const fetchPeliculas = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:3000/api/peliculas", {
+      const res = await fetch("https://ah-final-backend.onrender.com/api/peliculas", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ const Peliculas = () => {
 
   const eliminarPelicula = async (id) => {
     try {
-      const res = await fetch(`http://127.0.0.1:3000/api/peliculas/${id}`, {
+      const res = await fetch(`https://ah-final-backend.onrender.com/api/peliculas/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -43,7 +43,7 @@ const Peliculas = () => {
 
   const toggleFavorito = async (id) => {
     try {
-      const res = await fetch(`http://127.0.0.1:3000/api/peliculas/${id}/favorito`, {
+      const res = await fetch(`https://ah-final-backend.onrender.com/api/peliculas/${id}/favorito`, {
         method: "PATCH",
         headers: { 
           "Content-Type": "application/json",

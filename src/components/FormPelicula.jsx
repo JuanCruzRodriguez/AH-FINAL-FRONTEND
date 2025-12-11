@@ -13,7 +13,7 @@ const FormPelicula = () => {
     if (!id) return;
     const fetchPelicula = async () => {
       try {
-        const res = await fetch(`http://127.0.0.1:3000/api/peliculas/${id}`);
+        const res = await fetch(`https://ah-final-backend.onrender.com/api/peliculas/${id}`);
         const data = await res.json();
         if (res.ok)
           setForm({
@@ -44,8 +44,8 @@ const FormPelicula = () => {
 
     try {
       const url = id
-        ? `http://127.0.0.1:3000/api/peliculas/${id}`
-        : "http://127.0.0.1:3000/api/peliculas";
+        ? `https://ah-final-backend.onrender.com/api/peliculas/${id}`
+        : "https://ah-final-backend.onrender.com/api/peliculas";
       const method = id ? "PUT" : "POST";
 
       const res = await fetch(url, {

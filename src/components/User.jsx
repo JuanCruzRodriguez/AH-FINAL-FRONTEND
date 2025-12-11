@@ -14,7 +14,7 @@ const User = ({ u, onUserUpdated, onUserDeleted }) => {
     setLoading(true);
     try {
       const payload = { name: usuario.name, email: usuario.email, role: usuario.role };
-      const resp = await fetch(`http://127.0.0.1:3000/api/users/${usuario._id}`, {
+      const resp = await fetch(`https://ah-final-backend.onrender.com/api/users/${usuario._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -41,7 +41,7 @@ const User = ({ u, onUserUpdated, onUserDeleted }) => {
 
     setLoading(true);
     try {
-      const resp = await fetch(`http://127.0.0.1:3000/api/users/${usuario._id}`, {
+      const resp = await fetch(`https://ah-final-backend.onrender.com/api/users/${usuario._id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });

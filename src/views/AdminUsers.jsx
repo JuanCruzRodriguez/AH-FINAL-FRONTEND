@@ -13,7 +13,7 @@ const AdminUsers = () => {
 
     const fetchUsers = async () => {
       try {
-        const resp = await fetch("http://127.0.0.1:3000/api/users", {
+        const resp = await fetch("https://ah-final-backend.onrender.com/api/users", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await resp.json();

@@ -5,7 +5,7 @@ import Loading from '../components/Loading';
 
 const Register = () => {
   const navigate = useNavigate(); 
-  const endPoint = 'http://127.0.0.1:3000/api/users/register';
+  const endPoint = 'https://ah-final-backend.onrender.com/api/users/register';
 
   const [ error, setError ] = useState(false);
   const [ msgError, setMsgError ] = useState('');

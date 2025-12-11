@@ -13,7 +13,7 @@ const FormSerie = () => {
     if (!id) return;
     const fetchSerie = async () => {
       try {
-        const res = await fetch(`http://127.0.0.1:3000/api/series/${id}`);
+        const res = await fetch(`https://ah-final-backend.onrender.com/api/series/${id}`);
         const data = await res.json();
         if (res.ok)
           setForm({
@@ -44,8 +44,8 @@ const FormSerie = () => {
 
     try {
       const url = id
-        ? `http://127.0.0.1:3000/api/series/${id}`
-        : "http://127.0.0.1:3000/api/series";
+        ? `https://ah-final-backend.onrender.com/api/series/${id}`
+        : "https://ah-final-backend.onrender.com/api/series";
       const method = id ? "PUT" : "POST";
 
       const res = await fetch(url, {

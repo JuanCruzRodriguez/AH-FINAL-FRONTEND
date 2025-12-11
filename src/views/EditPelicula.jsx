@@ -22,7 +22,7 @@ const EditPelicula = () => {
   useEffect(() => {
     const getPelicula = async () => {
       try {
-        const resp = await fetch(`http://127.0.0.1:3000/api/peliculas/${id}`, {
+        const resp = await fetch(`https://ah-final-backend.onrender.com/api/peliculas/${id}`, {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`
@@ -55,7 +55,7 @@ const EditPelicula = () => {
     }
 
     try {
-      const resp = await fetch(`http://127.0.0.1:3000/api/peliculas/${id}`, {
+      const resp = await fetch(`https://ah-final-backend.onrender.com/api/peliculas/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

@@ -16,7 +16,7 @@ const EditSerie = () => {
   useEffect(() => {
     const getSerie = async () => {
       try {
-        const resp = await fetch(`http://127.0.0.1:3000/api/series/${id}`, {
+        const resp = await fetch(`https://ah-final-backend.onrender.com/api/series/${id}`, {
           headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` }
         });
         const data = await resp.json();
@@ -46,7 +46,7 @@ const EditSerie = () => {
     }
 
     try {
-      const resp = await fetch(`http://127.0.0.1:3000/api/series/${id}`, {
+      const resp = await fetch(`https://ah-final-backend.onrender.com/api/series/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify({...form, anio: Number(form.anio), temporadas: Number(form.temporadas)}),

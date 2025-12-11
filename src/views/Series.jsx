@@ -12,7 +12,7 @@ const Series = () => {
 
   const fetchSeries = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:3000/api/series", {
+      const res = await fetch("https://ah-final-backend.onrender.com/api/series", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -31,7 +31,7 @@ const Series = () => {
 
   const eliminarSerie = async (id) => {
     try {
-      const res = await fetch(`http://127.0.0.1:3000/api/series/${id}`, {
+      const res = await fetch(`https://ah-final-backend.onrender.com/api/series/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${token}` },
       });
@@ -43,7 +43,7 @@ const Series = () => {
 
   const toggleFavorito = async (id) => {
     try {
-      const res = await fetch(`http://127.0.0.1:3000/api/series/${id}/favorito`, {
+      const res = await fetch(`https://ah-final-backend.onrender.com/api/series/${id}/favorito`, {
         method: "PATCH",
         headers: { 
           "Content-Type": "application/json",

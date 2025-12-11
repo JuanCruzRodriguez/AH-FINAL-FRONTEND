@@ -32,7 +32,7 @@ const AddUser = () => {
     }
 
     try {
-      const res = await fetch("http://127.0.0.1:3000/api/users", {
+      const res = await fetch("https://ah-final-backend.onrender.com/api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
